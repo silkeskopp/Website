@@ -33,7 +33,7 @@ jobs:
           sshpass -p $SSH_PASSWORD scp -o StrictHostKeyChecking=no -r * $SSH_USERNAME@$SSH_SERVER:/var/www/silkeskopp/silkeskopp
 
       - name: Setup Pages
-        uses: actions/configure-pages@v1
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
