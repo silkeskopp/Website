@@ -21,17 +21,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install sshpass
-        run: sudo apt-get install -y sshpass
-
-      - name: Upload to external server via SCP
-        env:
-          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
-          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
-          SSH_SERVER: ${{ secrets.SSH_SERVER }}
-        run: |
-          sshpass -p $SSH_PASSWORD scp -o StrictHostKeyChecking=no -r * $SSH_USERNAME@$SSH_SERVER:/var/www/silkeskopp/silkeskopp
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
