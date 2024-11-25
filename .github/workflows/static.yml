@@ -1,34 +1,28 @@
-name: Deploy to server and GitHub Pages
+name: Deploy German
 
 on:
   push:
     branches: ["main"]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  schedule:
+    - cron: "0 0 1 * *"
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Set current date
+        run: echo "DATETIME=$(date +'%Y_%m_%d_%H_%M')" >> $GITHUB_ENV
+
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy files via SSH
+        uses: appleboy/scp-action@v0.1.7
         with:
-          path: '.'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          host: ${{ secrets.SSH_SERVER }}
+          username: ${{ secrets.SSH_USER }}
+          source: "*"
+          target: "/var/www/silke-skopp"
+          rm: true
+          password: ${{ secrets.SSH_PASSWORD }}
