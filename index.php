@@ -7,6 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
 
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PNGL2RQ8F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-2PNGL2RQ8F");
+  </script>
+  <!-- End Google tag  -->
+
+
   <!--[if lte IE 8
       ]><script src="assets/js/ie/html5shiv.js"></script
     ><![endif]-->
