@@ -1,6 +1,4 @@
-# silke-skopp.de – Platzhalterseite · Placeholder Page · Página de marcador de posición
-
----
+# Silke Skopp (DE, EN, ES)
 
 ## Deutsch
 
