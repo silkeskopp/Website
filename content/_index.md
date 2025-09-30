@@ -1,7 +1,7 @@
 ---
-description: An example site for hugo-theme-gallery. Images from Unsplash.
+description: Meine Reisegalerie
 #lastmod: 2023-07-05
-title: Hugo Gallery
+title: Eine Sammlung von Eindrücken, Bildern und Momenten meiner Reisen – festgehalten in einer persönlichen Galerie
 resources:
   - src: martin-martz-wRuhOOaG-Z4-unsplash.jpg
     params:

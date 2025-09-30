@@ -9,7 +9,7 @@ title = "Meine Reisen"
 googleAnalytics = "G-71GVZE7JW3"
 
 [params]
-  defaultTheme = "dark"
+  defaultTheme = "light"
   description = "Meine Reisen"
   title = "Meine Reisen"
   [params.author]
