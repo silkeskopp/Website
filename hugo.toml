@@ -1,0 +1,7 @@
+baseURL = 'https://silke-skopp.de'
+languageCode = 'de-de'
+title = 'Silke Skopp'
+
+[module]
+  [[module.imports]]
+    path = "github.com/nicokaiser/hugo-theme-gallery/v4"
