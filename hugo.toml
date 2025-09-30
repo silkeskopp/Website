@@ -6,10 +6,10 @@ languageCode = "de"
 timeZone = "Europe/Berlin"
 timeout = "200s"
 title = "Meine Reisen"
-googleAnalytics = "G-71GVZE7JW"
+googleAnalytics = "G-71GVZE7JW3"
 
 [params]
-  defaultTheme = "light"
+  defaultTheme = "dark"
   description = "Meine Reisen"
   title = "Meine Reisen"
   [params.author]
@@ -73,4 +73,4 @@ googleAnalytics = "G-71GVZE7JW"
   [services.rss]
     limit = 100
   [services.googleAnalytics]
-    ID = "G-71GVZE7JW"
+    ID = "G-71GVZE7JW3"
