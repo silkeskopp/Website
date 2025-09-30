@@ -1,10 +1,10 @@
 ---
-date: 2023-01-12
-title: Featured Album
+date: 2020-12-31
+title: 2020
 params:
-  featured: true
-  private: true # do not show in list, only as feature
-description: This is a featured album. It is private, so it is only shown on the homepage.
+  featured: false
+  private: false
+description: Mein Jahr 2020
 resources:
   - src: jeremy-bishop-pjszS6Q2g_Y-unsplash.jpg
     params:
