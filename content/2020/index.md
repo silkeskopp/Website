@@ -6,7 +6,7 @@ params:
   private: false
 description: Mein Jahr 2020
 resources:
-  - src: jeremy-bishop-pjszS6Q2g_Y-unsplash.jpg
+  - src: 18_1_Hesselberg
     params:
       cover: true
 ---
